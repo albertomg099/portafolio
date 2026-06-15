@@ -1,0 +1,79 @@
+h1.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    align-items: center;
+}
+
+h2.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: bold;
+    color: white;
+    align-items: center
+}
+
+main.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: bold;
+    color: white;
+    align-items: center
+}
+
+body {
+    font-family: "Montserrat", sans-serif; 
+    background-image: url('elementos/bg-body-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+}
+nav {
+    background-color: #3A82E4;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800; 
+    color: white;
+    font-size: larger;
+}
+
+.contenedor-presentacion {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    gap: 20px;                      
+    max-width: 900px;
+    margin: 40px auto;              
+    color: white;
+}
+
+.contenedor-presentacion .imagen img {
+    max-width: 250px;               /* Controla el tamaño de tu foto */
+    height: auto;
+    border-radius: 8px;             /* Bordes redondeados */
+}
+
+.contenedor-presentacion{
+    background-color: cadetblue;
+    border-radius: 8px;
+}
+
+footer{
+    background-color: cadetblue;
+    border-radius: 8px;
+}
+
+a{
+color: white;
+}
+
