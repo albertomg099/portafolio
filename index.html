@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
     <title>Portafolio</title>
 </head>
 
@@ -29,7 +28,11 @@
 
     <main class="montserrat text-center">
 
-
+       <section class="contenedor-foto-persona">
+            <div class="profile-frame">
+                <img src="elementos/foto-persona.jpg" alt="Foto de José Morales" class="profile-img">
+            </div>
+        </section>
 
         <section class="contenedor-presentacion">
             <div class="texto">
@@ -52,9 +55,77 @@
             </div>
         </section>
 
-        <section class="contenedor-foto-persona">
-            <div class="profile-frame">
-                <img src="elementos/foto-persona.jpg" alt="Foto de José Morales" class="profile-img">
+ 
+
+        <!-- Sección de Proyectos -->
+        <section id="proyectos" class="seccion-proyectos">
+            <h2 class="titulo-seccion">Mis Proyectos</h2>
+            <div class="linea-decorativa"></div>
+
+            <div class="grid-proyectos">
+
+                <!-- Proyecto 1: SportFit (Hackathon) -->
+                <article class="tarjeta-proyecto">
+                    <div class="proyecto-imagen">
+                        <img src="elementos/sport-fit.jpg" alt="Miniatura Proyecto 1">
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>SportFit</h3>
+                        <p>Landing page e-commerce deportiva desarrollada durante un hackathon escolar, enfocada en una
+                            interfaz dinámica y responsiva.</p>
+                        <div class="proyecto-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="#" class="btn-proy proy-principal"><i class="bi bi-laptop"></i> Demo</a>
+                            <a href="#" class="btn-proy proy-secundario"><i class="bi bi-github"></i> Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2: Eenergy Service -->
+                <article class="tarjeta-proyecto">
+                    <div class="proyecto-imagen">
+                        <img src="elementos/energy-service.png" alt="Miniatura Proyecto 2">
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>Energy Servide Landign Page</h3>
+                        <p>Landign page para Energy Service, negocio de mantenimiento a sistemas electricos y de refrigeración.</p>
+                        <div class="proyecto-tags">
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>BOOTSTRAP</span>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="#" class="btn-proy proy-principal"><i class="bi bi-laptop"></i> Demo</a>
+                            <a href="#" class="btn-proy proy-secundario"><i class="bi bi-github"></i> Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3: E-TECH MÉXICO -->
+                <article class="tarjeta-proyecto">
+                    <div class="proyecto-imagen">
+                        <img src="elementos/e-tech-mexico.jpg" alt="Miniatura Proyecto 3">
+                    </div>
+                    <div class="proyecto-info">
+                        <h3>E-TECH MÉXICO</h3>
+                        <p>Tienda digital y catálogo interactivo de teconología con pasarela simulada utilizando
+                            persistencia de datos en el Backend.</p>
+                        <div class="proyecto-tags">
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>FIGMA</span>
+                        </div>
+                        <div class="proyecto-enlaces">
+                            <a href="#" class="btn-proy proy-principal"><i class="bi bi-laptop"></i> Demo</a>
+                            <a href="#" class="btn-proy proy-secundario"><i class="bi bi-github"></i> Código</a>
+                        </div>
+                    </div>
+                </article>
+
             </div>
         </section>
 
