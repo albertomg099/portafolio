@@ -113,11 +113,9 @@ p {
 
 .contenedor-presentacion .texto {
     text-align: left;
-    /* Alinea los títulos y párrafos a la izquierda */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Centra el contenido verticalmente al lado de la imagen */
 }
 
 .contenedor-presentacion {
@@ -141,7 +139,6 @@ p {
 
 .contenedor-presentacion .imagen img {
     max-width: 200px;
-    /* Controla el ancho de la ilustración */
     height: auto;
     border-radius: 8px;
 }
@@ -177,7 +174,6 @@ a {
     padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    /* Centra la sección entera en pantallas ultra anchas */
 }
 
 .titulo-seccion {
@@ -199,10 +195,8 @@ a {
 /* --- CONFIGURACIÓN DEL GRID --- */
 .grid-proyectos {
     display: grid;
-    /* Crea 3 columnas iguales, si no caben (en móvil) bajan automáticamente */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    /* Espacio entre tarjetas */
     width: 100%;
 }
 
@@ -214,10 +208,8 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 16px;
     overflow: hidden;
-    /* Asegura que las esquinas de la imagen se redondeen */
     display: flex;
     flex-direction: column;
-    /* Apila imagen arriba, info abajo */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -245,7 +237,6 @@ a {
 
 .tarjeta-proyecto:hover .proyecto-imagen img {
     transform: scale(1.06);
-    /* Efecto zoom suave en la imagen al hacer hover */
 }
 
 /* --- INFORMACIÓN DE LA TARJETA --- */
@@ -254,9 +245,7 @@ a {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    /* Hace que todas las tarjetas midan lo mismo aunque el texto varíe */
     text-align: left;
-    /* Alineación de texto a la izquierda para mejor lectura */
 }
 
 .proyecto-info h3 {
@@ -271,7 +260,6 @@ a {
     line-height: 1.5;
     margin-bottom: 20px;
     flex-grow: 1;
-    /* Empuja los tags y botones al fondo uniformemente */
 }
 
 /* --- ETIQUETAS DE TECNOLOGÍAS (Pills) --- */
@@ -300,7 +288,6 @@ a {
 
 .btn-proy {
     flex: 1;
-    /* Hace que ambos botones midan la mitad justa */
     padding: 10px;
     text-align: center;
     text-decoration: none;
@@ -338,7 +325,6 @@ a {
 .seccion-contacto {
     padding: 60px 20px;
     max-width: 700px;
-    /* Un ancho más angosto para que el formulario se vea elegante */
     margin: 0 auto;
     text-align: center;
 }
@@ -349,7 +335,6 @@ a {
     margin-bottom: 30px;
 }
 
-/* Tarjeta contenedora con efecto cristal */
 .contenedor-formulario {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
@@ -364,15 +349,12 @@ a {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* Espacio uniforme entre campos */
 }
 
-/* Grupos que envuelven la etiqueta y el input */
 .grupo-formulario {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* Alinea los labels a la izquierda */
     gap: 8px;
     width: 100%;
 }
@@ -384,7 +366,6 @@ a {
     letter-spacing: 0.5px;
 }
 
-/* Estilos compartidos para Inputs y Textarea */
 .grupo-formulario input,
 .grupo-formulario textarea {
     width: 100%;
@@ -398,27 +379,22 @@ a {
     transition: all 0.3s ease;
 }
 
-/* Cambiar el color del texto de ayuda (placeholder) */
 .grupo-formulario input::placeholder,
 .grupo-formulario textarea::placeholder {
     color: rgba(255, 255, 255, 0.4);
 }
 
-/* Efecto cuando el usuario está escribiendo (Focus) */
 .grupo-formulario input:focus,
 .grupo-formulario textarea:focus {
     background: rgba(255, 255, 255, 0.12);
     border-color: #00e5ff;
-    /* Borde cian que hace juego con tu foto */
     box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
 }
 
-/* Evitar que el usuario deforme el diseño estirando el textarea de forma horizontal */
 .grupo-formulario textarea {
     resize: vertical;
 }
 
-/* --- BOTÓN DE ENVIAR (Estilo Neón) --- */
 .btn-enviar {
     width: 100%;
     padding: 14px;
@@ -449,4 +425,59 @@ a {
 }
 
 
-/* --- FOOTER --- */ 
+/* --- PIE DE PÁGINA (FOOTER) CON FONDO --- */
+.footer-portafolio {
+    width: 100%;
+    background: rgba(15, 23, 42, 0.6); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px 20px;
+    margin-top: 80px;
+}
+
+.contenido-footer {
+    max-width: 900px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.copyright {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+}
+
+.redes-footer {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.redes-footer a {
+    color: #ffffff !important;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redes-footer a i {
+    font-size: 1.6rem !important;
+    display: block;
+}
+
+.redes-footer a:hover {
+    color: #00e5ff !important;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .contenido-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
