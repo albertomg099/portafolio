@@ -315,3 +315,114 @@ color: white;
     background: rgba(255, 255, 255, 0.15);
     border-color: #ffffff;
 }
+
+/* --- SECCIÓN DE CONTACTO --- */
+.seccion-contacto {
+    padding: 60px 20px;
+    max-width: 700px; /* Un ancho más angosto para que el formulario se vea elegante */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subtitulo-contacto {
+    font-size: 1rem;
+    color: #d1d5db;
+    margin-bottom: 30px;
+}
+
+/* Tarjeta contenedora con efecto cristal */
+.contenedor-formulario {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio uniforme entre campos */
+}
+
+/* Grupos que envuelven la etiqueta y el input */
+.grupo-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los labels a la izquierda */
+    gap: 8px;
+    width: 100%;
+}
+
+.grupo-formulario label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Estilos compartidos para Inputs y Textarea */
+.grupo-formulario input,
+.grupo-formulario textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Cambiar el color del texto de ayuda (placeholder) */
+.grupo-formulario input::placeholder,
+.grupo-formulario textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Efecto cuando el usuario está escribiendo (Focus) */
+.grupo-formulario input:focus,
+.grupo-formulario textarea:focus {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #00e5ff; /* Borde cian que hace juego con tu foto */
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+}
+
+/* Evitar que el usuario deforme el diseño estirando el textarea de forma horizontal */
+.grupo-formulario textarea {
+    resize: vertical;
+}
+
+/* --- BOTÓN DE ENVIAR (Estilo Neón) --- */
+.btn-enviar {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #00e5ff 0%, #7000ff 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3);
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+    box-shadow: 0 6px 20px rgba(0, 229, 255, 0.5);
+}
+
+.btn-enviar:active {
+    transform: translateY(0);
+}
+

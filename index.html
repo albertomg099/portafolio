@@ -28,7 +28,7 @@
 
     <main class="montserrat text-center">
 
-       <section class="contenedor-foto-persona">
+        <section class="contenedor-foto-persona">
             <div class="profile-frame">
                 <img src="elementos/foto-persona.jpg" alt="Foto de José Morales" class="profile-img">
             </div>
@@ -54,8 +54,6 @@
                 <img src="elementos/tech.jpg" alt="tech">
             </div>
         </section>
-
- 
 
         <!-- Sección de Proyectos -->
         <section id="proyectos" class="seccion-proyectos">
@@ -92,7 +90,8 @@
                     </div>
                     <div class="proyecto-info">
                         <h3>Energy Servide Landign Page</h3>
-                        <p>Landign page para Energy Service, negocio de mantenimiento a sistemas electricos y de refrigeración.</p>
+                        <p>Landign page para Energy Service, negocio de mantenimiento a sistemas electricos y de
+                            refrigeración.</p>
                         <div class="proyecto-tags">
                             <span>JavaScript</span>
                             <span>HTML/CSS</span>
@@ -125,10 +124,46 @@
                         </div>
                     </div>
                 </article>
-
             </div>
         </section>
 
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="seccion-contacto">
+            <h2 class="titulo-seccion">Contacto</h2>
+            <div class="linea-decorativa"></div>
+            <p class="subtitulo-contacto">¿Tienes un proyecto en mente o una propuesta laboral? ¡Escríbeme!</p>
+
+            <!-- Contenedor del Formulario -->
+            <div class="contenedor-formulario">
+                <form action="#" method="POST" class="formulario-contacto">
+
+                    <!-- Campo: Nombre -->
+                    <div class="grupo-formulario">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                    </div>
+
+                    <!-- Campo: Correo -->
+                    <div class="grupo-formulario">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <!-- Campo: Mensaje -->
+                    <div class="grupo-formulario">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."
+                            required></textarea>
+                    </div>
+
+                    <!-- Botón de Enviar -->
+                    <button type="submit" class="btn-enviar">
+                        <i class="bi bi-send-fill"></i> Enviar Mensaje
+                    </button>
+
+                </form>
+            </div>
+        </section>
 
     </main>
 
